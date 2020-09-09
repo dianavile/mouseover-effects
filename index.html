@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouseover Effects CSS,JS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <section>
+        <h2>Hello</h2>
+        <h2>How are you doing?</h2>
+        <div class="circle"></div>
+    </section>
+    <script type="text/javascript">
+        const position = document.documentElement;
+        position.addEventListener('mousemove', e => {
+            position.style.setProperty('--x', e.clientX + 'px');
+            position.style.setProperty('--y', e.clientY + 'px');
+        })
+    </script>
+</body>
+
+</html>
